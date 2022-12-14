@@ -15,7 +15,7 @@
     <body>
         <header class="d-flex align-items-center justify-content-between">
             <div class="logoTitolo">
-                <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
+                <a href="#"><img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt=""></a>
                 <span>Privacy e termini</span>            
             </div>
             <div class="profilo d-flex align-items-center">
@@ -30,6 +30,16 @@
             </div>
         </header>
 
+
+        <nav>
+            <ul class="d-flex">
+                <li><a href="#">Introduzione</a></li>
+                <li><a href="#">Norme sulla privacy</a></li>
+                <li><a href="#">Termini di servizio</a></li>
+                <li><a href="#">Tecnologie</a></li>
+                <li><a href="#" class="paginAttiva">Domande Frequenti</a></li>
+            </ul>
+        </nav>
 
 
 
@@ -57,6 +67,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ////////////// HEADER ////////////////////////////////////////////////////// */
 header
 {
     padding: 15px 20px;
@@ -90,5 +101,39 @@ header .profilo span .icona
     padding: 0 2px;
 }
 
+/* ////////////// NAV ////////////////////////////////////////////////////// */
+nav
+{
+    padding: 0 20px 9px;
+    box-shadow: 0 1px lightgrey;
+}
+
+nav ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li
+{
+    padding-right: 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul .paginAttiva
+{
+    text-decoration: none;
+    color: blue;
+    box-shadow: 0 3px blue;
+    padding-bottom: 10px;
+}
 
 </style>
