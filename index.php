@@ -124,7 +124,7 @@
             </ul>
         </nav>
 
-        <main>
+        <main class="contenitore">
             
         <?php
         
@@ -141,6 +141,30 @@
         ?>
             
         </main>
+
+        <footer>
+            <div class="contenitore d-flex justify-content-between align-items-center">
+                <div class="d-flex footer-left">
+                    <div><a href="#">Google</a></div>
+                    <i class="fa-solid fa-circle"></i>
+                    <div><a href="#">Tutto su Google</a></div>
+                    <i class="fa-solid fa-circle"></i>
+                    <div><a href="#">Privacy</a></div>
+                    <i class="fa-solid fa-circle"></i>
+                    <div><a href="#">Termini</a></div>
+                </div>
+                <div class="d-flex align-items-center footer-right">
+                    <div class="iconaLingua">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+
+                    <select name="lingua" id="selectLingua">
+                        <option value="">Italiano</option>
+                        <option value="">English</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
 
         <!-- Axios 1.1.3 -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js' integrity='sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
@@ -164,6 +188,12 @@
     text-decoration: none;
     list-style-type: none;
     font-family: 'Montserrat', sans-serif;
+}
+
+.contenitore
+{
+    width: 50%;
+    margin: auto;
 }
 
 
@@ -259,8 +289,6 @@ main
     display: hidden;
     overflow: auto;
     padding-top: 100px;
-    width: 50%;
-    margin: auto;
 }
 
 main a
@@ -283,6 +311,58 @@ main .linkT-None
 {
     text-decoration: none;
 }
+
+
+
+footer
+{
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+}
+
+footer .fa-circle
+{
+    font-size: 0.05rem;
+}
+
+.footer-left > *
+{
+    padding-right: 10px; 
+}
+
+.footer-left i
+{
+    padding-top: 10px; 
+}
+
+.footer-right .iconaLingua
+{
+    padding: 0 6px;
+    margin-right: 5px;
+    background: linear-gradient(to bottom, #45c6ff , #0085f3);
+    border-radius: 5px;
+    position: relative;
+}
+
+.footer-right .iconaLingua i
+{
+    color: white;
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+.footer-right select
+{
+    width: 200px;
+}
+
 
 
 </style>
