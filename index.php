@@ -13,7 +13,22 @@
     </head>
 
     <body>
-        
+        <header class="d-flex align-items-center justify-content-between">
+            <div class="logoTitolo">
+                <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="">
+                <span>Privacy e termini</span>            
+            </div>
+            <div class="profilo d-flex align-items-center">
+                <span class="d-flex">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-ellipsis-vertical icona"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </span>
+                <div>
+                    <img src="./assets/img/Y-Profile.png" alt="">
+                </div>
+            </div>
+        </header>
 
 
 
@@ -30,5 +45,50 @@
 </html>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header
+{
+    padding: 15px 20px;
+}
+
+header .logoTitolo
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+header .profilo img
+{
+    width: 30px;
+}
+
+header .profilo div
+{
+    background-color: lightblue;
+    border-radius: 50%;
+    padding-left: 5px;
+}
+
+header .profilo span 
+{
+    padding: 0 20px;
+}
+
+header .profilo span .icona
+{
+    padding: 0 2px;
+}
+
 
 </style>
